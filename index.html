@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>test</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper {
+            position: relative;
+            height: 450px;
+            width: 450px;
+              
+        }
+        .circle-square {
+            position: absolute;
+            left: -15px;
+            z-index: -1;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: #6366f1;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: all 0.5s ease-in-out;
+            
+        }
+        .content {
+            padding-left: 150px;
+            text-align: center;
+            color: #fff;
+            display: none;
+            
+        }
+        .social {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease-in-out;
+            
+        }
+        .wrapper:hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+        }
+        .wrapper:hover .circle-square{
+            left: 0;
+            width: 450px;
+            height: 300px;
+            border-radius: 4px;
+        }
+        .wrapper:hover .content{
+            display: block;
+        }
+        .wrapper:hover img{
+            top: -70px;
+            left: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="circle-square"></div>
+            <div class="square">
+                <div class="content">
+                    <h4>Bella Snow</h4>
+                    <div>Graphic & Web Designer</div>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <img src="images/1.png" alt="" srcset="">
+        </div>
+    </div>
+</body>
+</html>
